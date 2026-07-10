@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title data-en="Youssef Abdelhamed - Data Analyst" data-ar="يوسف عبد الحميد - محلل بيانات">Youssef Abdelhamed - Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7VL1FQSH1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z7VL1FQSH1');
+  </script>
+</head>
+<body class="page-offset">
+
+  <!-- Scroll Progress Bar -->
+  <div id="scrollProgressBar" class="scroll-progress-bar"></div>
+
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="logo"><i class="fas fa-chart-line"></i> Y.A</a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active" data-en="Home" data-ar="الرئيسية">Home</a></li>
+        <li><a href="#about" class="nav-link" data-en="About" data-ar="عنّي">About</a></li>
+        <li><a href="#projects" class="nav-link" data-en="Projects" data-ar="المشاريع">Projects</a></li>
+        <li><a href="#skills" class="nav-link" data-en="Skills & Certs" data-ar="المهارات والشهادات">Skills & Certs</a></li>
+        <li><a href="#contact" class="nav-link" data-en="Contact" data-ar="تواصل">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button id="langToggle" class="lang-toggle">عر</button>
+        <button id="themeToggle" class="theme-toggle"><i class="fas fa-moon" aria-label="theme-toggle"></i></button>
+      </div>
+      <button id="mobileMenuToggle" class="mobile-toggle"><i class="fas fa-bars" aria-label="mobileMenuToggle"></i></button>
+    </div>
+  </nav>
+
+  <!-- ===================== HOME SECTION ===================== -->
+  <section id="home" class="hero">
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas" class="particle-canvas"></canvas>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1><span data-en="Hi, I'm" data-ar="مرحباً، أنا">Hi, I'm</span> <span class="gradient-text" data-en="Youssef Abdelhamed" data-ar="يوسف عبد الحميد">Youssef Abdelhamed</span></h1>
+        <p class="hero-title">
+          <span id="typingText" data-en="Data Analyst & BI Developer" data-ar="محلل بيانات ومطور BI">Data Analyst & BI Developer</span>
+          <span class="cursor">|</span>
+        </p>
+        <p class="hero-desc"
+  data-en="Every dataset has a story waiting to be told. I use Power BI, SQL, and Python to uncover that story — turning raw business data into clear decisions that drive real impact, across any industry, at any scale."
+  data-ar="كل مجموعة بيانات تحمل قصة تنتظر أن تُروى. أستخدم Power BI وSQL وPython للكشف عن تلك القصة — محوّلاً البيانات الخام إلى قرارات واضحة تُحدث أثراً حقيقياً، في أي صناعة وعلى أي نطاق.">
+  Every dataset has a story waiting to be told. I use Power BI, SQL, and Python to uncover that story — turning raw business data into clear decisions that drive real impact, across any industry, at any scale.
+</p>
+
+        <!-- Animated Hero Stats -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="10" data-type="plus">0</span>
+            <span class="hero-stat-label" data-en="Projects" data-ar="مشروع">Projects</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="5" data-type="plus">0</span>
+            <span class="hero-stat-label" data-en="Certifications" data-ar="شهادات">Certifications</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-count="1" data-type="plus">0</span>
+            <span class="hero-stat-label" data-en="Years Experience" data-ar="سنوات خبرة">Years Experience</span>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#about" class="btn-primary" aria-label="View projects" data-en="About me" data-ar="عنّي">About me</a>
+          <a href="https://drive.google.com/file/d/13Te4pychl7Btk-9PIu5RkjvKHqCmj6RY/view?usp=sharing" class="btn-secondary" aria-label="Hire me" data-en="Download CV" data-ar="تحميل السيرة الذاتية">Download CV</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/profile.webp" alt="Youssef Abdelhamed" height="500" />
+        <div class="about-badge">
+          <i class="fas fa-award"></i>
+          <p data-en="Google Data Analytics Professional" data-ar="محترف تحليل بيانات Google">Google Data Analytics Professional</p>
+        </div>
+        <div>
+          <div class="about-badge">
+            <i class="fas fa-award"></i>
+            <p data-en="Machinfy Data Analysis Professional" data-ar="محترف تحليل البيانات - Machinfy">Machinfy Data Analysis Professional</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about" class="main-content">
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-title" data-en="About Me" data-ar="عنّي">About Me</h1>
+        <p class="page-subtitle" data-en="Discover the person behind the data — my journey, expertise, and passion for turning complex information into practical, actionable insights." data-ar="اكتشف الشخص خلف البيانات — رحلتي وخبراتي وشغفي بتحويل المعلومات المعقدة إلى رؤى قابلة للتنفيذ.">Discover the person behind the data — my journey, expertise, and passion for turning complex information into practical, actionable insights.</p>
+      </div>
+
+      <!-- ====== TOP GRID: Logo-Box + Cards ====== -->
+      <div class="top-grid">
+
+        <!-- 1) Logo Card (Sticky) -->
+        <div class="logo-card">
+          <div class="circle logo">
+            <div>
+              <img src="images/Logo.png" width="210PX" alt="Youssef Abdelhamed Logo">
+            </div>
+          </div>
+          <h2 class="profile-name" data-en="Youssef Abdelhamed" data-ar="يوسف عبد الحميد">Youssef Abdelhamed</h2>
+          <p class="profile-title" data-en="Data Analyst & BI Expert" data-ar="محلل بيانات وخبير BI">Data Analyst & BI Expert</p>
+
+          <div class="profile-info">
+            <div class="info-item"><i class="fas fa-envelope"></i><span>youssef.abdelhamed70@gmail.com</span></div>
+            <div class="info-item"><i class="fas fa-phone"></i><span>+20 115 968 0509</span></div>
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i><span data-en="Giza, Egypt" data-ar="الجيزة، مصر">Giza, Egypt</span></div>
+            <div class="info-item"><i class="fas fa-graduation-cap"></i><span data-en="Faculty of Law, Helwan University" data-ar="كلية الحقوق، جامعة حلوان">Faculty of Law, Helwan University</span></div>
+          </div>
+
+          <div class="profile-social">
+            <a href="https://linkedin.com/in/youssefabdelhamed" target="_blank" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/youssefabdelhamed70-rgb" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="mailto:youssef.abdelhamed70@gmail.com" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/201159680509" target="_blank" class="social-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <!-- 2) Right Cards Wrapper -->
+        <div class="right-cards">
+          <!-- Professional Summary -->
+          <div class="card-box">
+            <div class="content-card">
+              <h3 class="card-title"><i class="fas fa-user-tie"></i> <span data-en="Professional Summary" data-ar="الملخص المهني">Professional Summary</span></h3>
+              <div class="card-content">
+  <p data-en="Data analysis wasn't a career choice — it was a natural response to curiosity. I found myself drawn to the 'why' behind every number, which led me to build analytical solutions in Power BI, SQL, and Python that translate business complexity into clarity — no matter the domain."
+     data-ar="تحليل البيانات لم يكن خياراً مهنياً — بل كان استجابة طبيعية للفضول. وجدت نفسي منجذباً إلى 'لماذا' خلف كل رقم، مما قادني إلى بناء حلول تحليلية بـ Power BI وSQL وPython تُحوّل تعقيد الأعمال إلى وضوح — بغض النظر عن المجال.">
+    Data analysis wasn't a career choice — it was a natural response to curiosity. I found myself drawn to the 'why' behind every number, which led me to build analytical solutions in Power BI, SQL, and Python that translate business complexity into clarity — no matter the domain.
+  </p>
+  <p style="margin-top:1rem"
+     data-en="Whether it's understanding why revenue drops, where inefficiencies hide, or what the data is really saying — I find the story and make sure the right people understand it, act on it, and trust it."
+     data-ar="سواء كان الأمر يتعلق بفهم سبب انخفاض الإيرادات، أو اكتشاف أين تكمن مواطن الضعف، أو ما تقوله البيانات حقاً — أجد القصة وأحرص على أن يفهمها الأشخاص المناسبون، ويتصرفوا بناءً عليها، ويثقوا بها.">
+    Whether it's understanding why revenue drops, where inefficiencies hide, or what the data is really saying — I find the story and make sure the right people understand it, act on it, and trust it.
+  </p>
+</div>
+            </div>
+          </div>
+
+          <!-- Core Competencies -->
+          <div class="card-box">
+            <div class="content-card">
+              <h3 class="card-title"><i class="fas fa-cogs"></i> <span data-en="Core Competencies" data-ar="الكفاءات الأساسية">Core Competencies</span></h3>
+              <div class="card-content">
+  <ul style="list-style:none;padding:0">
+    <li style="margin-bottom:.5rem;padding-left:1.5rem;position:relative">
+      <span style="position:absolute;left:0;color:var(--primary)">▸</span>
+      <span data-en="Advanced Data Analysis & Visualization" data-ar="تحليل البيانات المتقدم والتصور البياني">Advanced Data Analysis & Visualization</span>
+    </li>
+    <li style="margin-bottom:.5rem;padding-left:1.5rem;position:relative">
+      <span style="position:absolute;left:0;color:var(--primary)">▸</span>
+      <span data-en="Business Intelligence & Dashboard Development" data-ar="ذكاء الأعمال وتطوير لوحات المعلومات">Business Intelligence & Dashboard Development</span>
+    </li>
+    <li style="margin-bottom:.5rem;padding-left:1.5rem;position:relative">
+      <span style="position:absolute;left:0;color:var(--primary)">▸</span>
+      <span data-en="ETL Process Automation & Optimization" data-ar="أتمتة وتحسين عمليات ETL">ETL Process Automation & Optimization</span>
+    </li>
+    <li style="margin-bottom:.5rem;padding-left:1.5rem;position:relative">
+      <span style="position:absolute;left:0;color:var(--primary)">▸</span>
+      <span data-en="Statistical Analysis & Predictive Modeling" data-ar="التحليل الإحصائي والنمذجة التنبؤية">Statistical Analysis & Predictive Modeling</span>
+    </li>
+    <li style="margin-bottom:.5rem;padding-left:1.5rem;position:relative">
+      <span style="position:absolute;left:0;color:var(--primary)">▸</span>
+      <span data-en="Cross-functional Collaboration & Communication" data-ar="التعاون متعدد الوظائف والتواصل الفعّال">Cross-functional Collaboration & Communication</span>
+    </li>
+    <li style="padding-left:1.5rem;position:relative">
+      <span style="position:absolute;left:0;color:var(--primary)">▸</span>
+      <span data-en="Problem-Solving & Analytical Thinking" data-ar="حل المشكلات والتفكير التحليلي">Problem-Solving & Analytical Thinking</span>
+    </li>
+  </ul>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end of top-grid -->
+
+      <!-- ====== Professional Experience (Full Width) ====== -->
+<div class="timeline-section">
+  <h2 style="text-align:center;font-size:2rem;font-weight:700;margin-bottom:3rem;color:var(--primary)" data-en="Professional Experience" data-ar="الخبرة المهنية">Professional Experience</h2>
+  <div class="timeline">
+
+    <!-- Truvian -->
+    <div class="timeline-item">
+      <div class="timeline-date">Jun 2025 – Jul 2025</div>
+      <h3 class="timeline-title" data-en="Data Analyst Intern" data-ar="محلل بيانات متدرب">Data Analyst Intern</h3>
+      <p class="timeline-company">Truvian Intelligence</p>
+      <div class="timeline-description">
+        <p data-en="Improved data accuracy by 22% through rigorous validation processes and automated Power BI refresh workflows." data-ar="حسّنت دقة البيانات بنسبة 22% من خلال عمليات التحقق الصارمة وأتمتة سير عمل تحديث Power BI.">Improved data accuracy by 22% through rigorous validation processes and automated Power BI refresh workflows.</p>
+        <ul class="achievement-list">
+          <li data-en="Validated and cleaned data to ensure accuracy and reliability across reporting systems." data-ar="تحققت من البيانات ونظفتها لضمان الدقة والموثوقية عبر أنظمة التقارير.">Validated and cleaned data to ensure accuracy and reliability across reporting systems.</li>
+          <li data-en="Automated Power BI workflows to reduce manual effort and accelerate reporting cycles by 60%." data-ar="أتمت سير عمل Power BI لتقليل الجهد اليدوي وتسريع دورات التقارير بنسبة 60%.">Automated Power BI workflows to reduce manual effort and accelerate reporting cycles by 60%.</li>
+          <li data-en="Collaborated with stakeholders to translate business needs into data-driven solutions." data-ar="تعاونت مع أصحاب المصلحة لترجمة الاحتياجات التجارية إلى حلول مبنية على البيانات.">Collaborated with stakeholders to translate business needs into data-driven solutions.</li>
+          <li data-en="Designed and maintained KPI dashboards to support strategic decision-making across teams." data-ar="صممت وحافظت على لوحات KPI لدعم صنع القرار الاستراتيجي عبر الفرق.">Designed and maintained KPI dashboards to support strategic decision-making across teams.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Freelance -->
+    <div class="timeline-item">
+      <div class="timeline-date">Nov 2024 – Present</div>
+      <h3 class="timeline-title" data-en="Freelance Data Analyst" data-ar="محلل بيانات مستقل">Freelance Data Analyst</h3>
+      <p class="timeline-company" data-en="Independent Consultant" data-ar="مستشار حر">Independent Consultant</p>
+      <div class="timeline-description">
+        <p data-en="Delivered end-to-end data analysis solutions for clients in retail and service sectors, improving reporting accuracy by 20%." data-ar="قدمت حلول تحليل بيانات متكاملة لعملاء في قطاعي التجزئة والخدمات، محسّناً دقة التقارير بنسبة 20%.">Delivered end-to-end data analysis solutions for clients in retail and service sectors, improving reporting accuracy by 20%.</p>
+        <ul class="achievement-list">
+          <li data-en="Built Power BI dashboards and automated reports to track KPIs across business units." data-ar="أنشأت لوحات Power BI وتقارير آلية لتتبع مؤشرات الأداء الرئيسية عبر وحدات الأعمال.">Built Power BI dashboards and automated reports to track KPIs across business units.</li>
+          <li data-en="Cleaned and modeled datasets using Python and SQL to ensure reliable analysis." data-ar="نظفت ونمذجت مجموعات البيانات باستخدام Python وSQL لضمان تحليل موثوق.">Cleaned and modeled datasets using Python and SQL to ensure reliable analysis.</li>
+          <li data-en="Translated client business objectives into actionable analytical frameworks." data-ar="ترجمت أهداف العملاء التجارية إلى أطر تحليلية قابلة للتنفيذ.">Translated client business objectives into actionable analytical frameworks.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Quantium -->
+    <div class="timeline-item">
+      <div class="timeline-date">Jan 2026</div>
+      <h3 class="timeline-title" data-en="Quantium Data Analytics Job Simulation" data-ar="محاكاة وظيفة تحليل البيانات – Quantium">Quantium Data Analytics Job Simulation</h3>
+      <p class="timeline-company">Forage – Quantium</p>
+      <div class="timeline-description">
+        <p data-en="Completed a job simulation focused on Data Analytics and Commercial Insights for the data science team." data-ar="أكملت محاكاة وظيفية تركز على تحليل البيانات والرؤى التجارية لفريق علوم البيانات.">Completed a job simulation focused on Data Analytics and Commercial Insights for the data science team.</p>
+        <ul class="achievement-list">
+          <li data-en="Developed expertise in data preparation and customer analytics using transaction datasets." data-ar="طورت خبرة في إعداد البيانات وتحليلات العملاء باستخدام مجموعات بيانات المعاملات.">Developed expertise in data preparation and customer analytics using transaction datasets.</li>
+          <li data-en="Extracted valuable insights and delivered data-driven commercial recommendations." data-ar="استخرجت رؤى قيمة وقدمت توصيات تجارية مبنية على البيانات.">Extracted valuable insights and delivered data-driven commercial recommendations.</li>
+          <li data-en="Identified benchmark stores for uplift testing on trial store layouts." data-ar="حددت المتاجر المرجعية لاختبار التحسين على تخطيطات المتاجر التجريبية.">Identified benchmark stores for uplift testing on trial store layouts.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Deloitte -->
+    <div class="timeline-item">
+      <div class="timeline-date">Dec 2025</div>
+      <h3 class="timeline-title" data-en="Deloitte Australia Data Analytics Job Simulation" data-ar="محاكاة وظيفة تحليل البيانات – Deloitte Australia">Deloitte Australia Data Analytics Job Simulation</h3>
+      <p class="timeline-company">Forage – Deloitte Australia</p>
+      <div class="timeline-description">
+        <p data-en="Completed a Deloitte job simulation involving data analysis and forensic technology." data-ar="أكملت محاكاة وظيفية من Deloitte تشمل تحليل البيانات والتقنية الجنائية.">Completed a Deloitte job simulation involving data analysis and forensic technology.</p>
+        <ul class="achievement-list">
+          <li data-en="Created a data dashboard using Tableau for forensic insights." data-ar="أنشأت لوحة بيانات باستخدام Tableau للرؤى الجنائية.">Created a data dashboard using Tableau for forensic insights.</li>
+          <li data-en="Used Excel to classify data and draw business conclusions." data-ar="استخدمت Excel لتصنيف البيانات واستخلاص الاستنتاجات التجارية.">Used Excel to classify data and draw business conclusions.</li>
+          <li data-en="Presented findings in a structured report format." data-ar="قدمت النتائج بتنسيق تقرير منظم.">Presented findings in a structured report format.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- UDS -->
+    <div class="timeline-item">
+      <div class="timeline-date">Apr 2023 – May 2024</div>
+      <h3 class="timeline-title" data-en="Purchasing Manager" data-ar="مدير مشتريات">Purchasing Manager</h3>
+      <p class="timeline-company">UDS</p>
+      <div class="timeline-description">
+        <ul class="achievement-list">
+          <li data-en="Managed procurement processes and negotiated with vendors to achieve cost savings." data-ar="أدرت عمليات المشتريات وتفاوضت مع الموردين لتحقيق توفير في التكاليف.">Managed procurement processes and negotiated with vendors to achieve cost savings.</li>
+          <li data-en="Monitored inventory levels and aligned procurement strategies with business objectives." data-ar="راقبت مستويات المخزون وواءمت استراتيجيات المشتريات مع الأهداف التجارية.">Monitored inventory levels and aligned procurement strategies with business objectives.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Vodafone -->
+    <div class="timeline-item">
+      <div class="timeline-date">Apr 2021 – Nov 2022</div>
+      <h3 class="timeline-title" data-en="Call Center Representative" data-ar="ممثل مركز اتصالات">Call Center Representative</h3>
+      <p class="timeline-company">Vodafone Egypt</p>
+      <div class="timeline-description">
+        <ul class="achievement-list">
+          <li data-en="Provided customer service in a high-volume environment, consistently exceeding performance targets." data-ar="قدمت خدمة عملاء في بيئة ذات حجم عالٍ، متجاوزاً باستمرار أهداف الأداء.">Provided customer service in a high-volume environment, consistently exceeding performance targets.</li>
+          <li data-en="Monitored team performance metrics and served as team delegate to ensure smooth workflow." data-ar="راقبت مقاييس أداء الفريق وعملت كمندوب للفريق لضمان سير العمل السلس.">Monitored team performance metrics and served as team delegate to ensure smooth workflow.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section id="projects" class="main-content">
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-title" data-en="My Projects" data-ar="مشاريعي">My Projects</h1>
+        <p class="page-subtitle" data-en="Explore my portfolio of data analysis projects, highlighting my expertise in Power BI, SQL, Python, and delivering impactful business intelligence solutions." data-ar="استكشف محفظتي من مشاريع تحليل البيانات، مع إبراز خبرتي في Power BI وSQL وPython وتقديم حلول ذكاء أعمال مؤثرة.">
+          Explore my portfolio of data analysis projects, highlighting my expertise in Power BI, SQL, Python, and delivering impactful business intelligence solutions.
+        </p>
+      </div>
+
+      <!-- Project Filters -->
+      <div class="project-filters" id="projectFilters">
+        <button class="filter-btn active" data-filter="all" data-en="All" data-ar="الكل">All</button>
+        <button class="filter-btn" data-filter="excel">Excel</button>
+        <button class="filter-btn" data-filter="powerbi">Power BI</button>
+        <button class="filter-btn" data-filter="sql">SQL</button>
+        <button class="filter-btn" data-filter="python">Python</button>
+      </div>
+
+      <!-- Projects Grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- electronic Analysis -->
+        <div class="project-card" data-category="powerbi">
+          <div><img src="images/electronic sales.png" width="340" alt="E-commerce"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="Electronic-sales Analysis" data-ar="تحليل مبيعات الإلكترونيات">Electronic-sales Analysis</h3>
+              <span class="project-tech">Power BI</span>
+            </div>
+            <p class="project-description" data-en="Sales are primarily driven by social media, and discounts aren't the main factor; quality and quantity are what most influence purchasing decisions. Let's find out why." data-ar="تتحرك المبيعات بشكل أساسي عبر وسائل التواصل الاجتماعي، والخصومات ليست العامل الرئيسي؛ الجودة والكمية هما ما يؤثران بشكل كبير على قرارات الشراء. دعنا نكتشف السبب.">
+              Sales are primarily driven by social media, and discounts aren't the main factor; quality and quantity are what most influence purchasing decisions. Let's find out why.
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/Electronic-sales" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HR Attrition Analysis -->
+        <div class="project-card" data-category="powerbi">
+          <div><img src="images/ATR view.png" width="327" alt="HR-Attrition"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="HR Attrition Analysis" data-ar="تحليل دوران الموظفين">HR Attrition Analysis</h3>
+              <span class="project-tech">Power BI</span>
+            </div>
+            <p class="project-description" data-en="For some reason, employees temporarily left work pressures to focus on recognition and career development, and concentrated the workload on specific departments. So, what happened?" data-ar="لسبب ما، ترك الموظفون ضغوط العمل مؤقتاً للتركيز على الاعتراف والتطوير الوظيفي، وركزوا عبء العمل على أقسام محددة. إذن، ماذا حدث؟">
+              For some reason, employees temporarily left work pressures to focus on recognition and career development, and concentrated the workload on specific departments. So, what happened?
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/HR-Attrition-Dashboard" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- pixar sql -->
+        <div class="project-card" data-category="sql">
+          <div><img src="images/SQL.webp" alt="SQL" width="327" height="200"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="pixar films" data-ar="أفلام Pixar">pixar films</h3>
+              <span class="project-tech">postgre SQL</span>
+            </div>
+            <p class="project-description" data-en="Pixar's success isn't just about big budgets, but about focused creativity, strong leadership, and clever storylines that ensure both commercial and critical success. Let's find out." data-ar="نجاح Pixar لا يتعلق بالميزانيات الضخمة فقط، بل بالإبداع المركز والقيادة القوية والحبكات الذكية التي تضمن النجاح التجاري والنقدي على حد سواء. دعنا نكتشف ذلك.">
+              Pixar's success isn't just about big budgets, but about focused creativity, strong leadership, and clever storylines that ensure both commercial and critical success. Let's find out.
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/Pixar-" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bike-Share Analysis -->
+        <div class="project-card" data-category="python">
+          <div><img src="images/bike share.png" alt="Bike-Share" width="327" height="200"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="Bike-Share Analysis" data-ar="تحليل مشاركة الدراجات">Bike-Share Analysis</h3>
+              <span class="project-tech">Python</span>
+            </div>
+            <p class="project-description" data-en="Summarize the story: How do we turn a 'break' customer into a 'regular' customer? Let's see what happens!" data-ar="لخص القصة: كيف نحول عميل 'استراحة' إلى عميل 'منتظم'؟ دعنا نرى ما يحدث!">
+              Summarize the story: How do we turn a "break" customer into a "regular" customer? Let's see what happens!
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/bikeshare" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- coffee sales Analysis -->
+        <div class="project-card" data-category="excel">
+          <div><img src="images/coffee sales.png" alt="coffee sales" width="327" height="200"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="coffee sales Analysis" data-ar="تحليل مبيعات القهوة">coffee sales Analysis</h3>
+              <span class="project-tech">Excel</span>
+            </div>
+            <p class="project-description" data-en="From Latte to Peak: The story of a café shifting between seasons and taste. What is the reason for that?" data-ar="من اللاتيه إلى القمة: قصة مقهى يتحول بين المواسم والذوق. ما السبب في ذلك؟">
+              From Latte to Peak: The story of a café shifting between seasons and taste. What is the reason for that?
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/coffee-sales" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- churn Analysis -->
+        <div class="project-card" data-category="powerbi">
+          <div><img src="images/telecom churn.png" alt="churn" width="327" height="200"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="Telecom churn Analysis" data-ar="تحليل إلغاء اشتراكات الاتصالات">Telecom churn Analysis</h3>
+              <span class="project-tech">Power BI</span>
+            </div>
+            <p class="project-description" data-en="Customers don't leave a service just because of the price, but because they're not engaged with it. Every additional service reduces the likelihood of leaving, let's find out why" data-ar="لا يغادر العملاء الخدمة بسبب السعر فقط، بل لأنهم غير متفاعلين معها. كل خدمة إضافية تقلل من احتمالية المغادرة، دعنا نكتشف السبب">
+              Customers don't leave a service just because of the price, but because they're not engaged with it. Every additional service reduces the likelihood of leaving, let's find out why
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/Telecom-churn" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- hotel Analysis -->
+        <div class="project-card" data-category="excel">
+          <div><img src="images/hotel.png" width="340" height="200px" alt="Hotel-stay"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="hotel stay Analysis" data-ar="تحليل إقامة الفنادق">hotel stay Analysis</h3>
+              <span class="project-tech">Excel</span>
+            </div>
+            <p class="project-description" data-en="Hotel guest data analysis revealed strong performance in accommodation and business services, contrasted by critical gaps in food and internet experience, with a strategic opportunity to convert business travelers into loyal repeat guests through an improved end-to-end experience." data-ar="كشف تحليل بيانات نزلاء الفندق عن أداء قوي في الإقامة والخدمات التجارية، مقابل فجوات حرجة في تجربة الطعام والإنترنت، مع فرصة استراتيجية لتحويل المسافرين التجاريين إلى ضيوف متكررين مخلصين من خلال تجربة محسّنة من البداية إلى النهاية.">
+              Hotel guest data analysis revealed strong performance in accommodation and business services, contrasted by critical gaps in food and internet experience, with a strategic opportunity to convert business travelers into loyal repeat guests through an improved end-to-end experience.
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/Hotel-stay" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MO salah Analysis -->
+        <div class="project-card" data-category="powerbi">
+          <div><img src="images/MO salah.png" width="327" alt="MO-salah"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="MO salah Analysis" data-ar="تحليل محمد صلاح">MO salah Analysis</h3>
+              <span class="project-tech">Power BI</span>
+            </div>
+            <p class="project-description" data-en="There is always a debate: Is Mohamed Salah just a scorer? Isn't there a complete player that affects the team's performance over time?" data-ar="هناك دائماً جدل: هل محمد صلاح مجرد هداف؟ أليس هناك لاعب كامل يؤثر على أداء الفريق مع مرور الوقت؟">
+              There is always a debate: Is Mohamed Salah just a scorer? Isn't there a complete player that affects the team's performance over time?
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/MO-Salah-tracking" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- movies Analysis -->
+        <div class="project-card" data-category="excel">
+          <div><img src="images/movies.png" width="340" height="200px" alt="movies"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="Movies Analysis" data-ar="تحليل الأفلام">Movies Analysis</h3>
+              <span class="project-tech">Excel</span>
+            </div>
+            <p class="project-description" data-en="Cinema is the mirror of society - it evolves with its development, reflects its dreams and fears, and remains the art most capable of bringing people together despite their differences. Data tells us that the future belongs to those who are good at telling stories that touch both the heart and the mind." data-ar="السينيا هي مرآة المجتمع - تتطور مع تطوره، تعكس أحلامه ومخاوفه، وتظل الفن الأكثر قدرة على جمع الناس معاً رغم اختلافاتهم. البيانات تخبرنا أن المستقبل ينتمي لأولئك الجيدين في سرد القصص التي تلمس القلب والعقل معاً.">
+              Cinema is the mirror of society - it evolves with its development, reflects its dreams and fears, and remains the art most capable of bringing people together despite their differences. Data tells us that the future belongs to those who are good at telling stories that touch both the heart and the mind.
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/movies" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- pharmacy Analysis -->
+        <div class="project-card" data-category="powerbi">
+          <div><img src="images/pharmacy.png" width="327" alt="Pharmacy-dashboard"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="Pharmacy Analysis" data-ar="تحليل الصيدلية">Pharmacy Analysis</h3>
+              <span class="project-tech">Power BI</span>
+            </div>
+            <p class="project-description" data-en="Although the sellers' performance is similar, the decrease in 2025 sales compared to 2024 is directly related to the loss of customers and the weak average bill value in some branches. This left the main question: Why are sales decreasing? Is the problem in the market or in operation?" data-ar="على الرغم من أن أداء البائعين متشابه، إلا أن انخفاض المبيعات في عام 2025 مقارنة بعام 2024 يرتبط مباشرة بفقدان العملاء وضعف متوسط قيمة الفاتورة في بعض الفروع. وهذا يطرح السؤال الرئيسي: لماذا تتناقص المبيعات؟ هل المشكلة في السوق أم في التشغيل؟">
+              Although the sellers' performance is similar, the decrease in 2025 sales compared to 2024 is directly related to the loss of customers and the weak average bill value in some branches. This left the main question: Why are sales decreasing? Is the problem in the market or in operation?
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/Pharmacy-dashboard" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- bayout Analysis -->
+        <div class="project-card" data-category="powerbi">
+          <div><img src="images/bayout.png" width="327" alt="Bayout-dashboard"></div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title" data-en="bayout prices Analysis" data-ar="تحليل أسعار بيوت">bayout prices Analysis</h3>
+              <span class="project-tech">Power BI</span>
+            </div>
+            <p class="project-description" data-en="Market analysis explained that location and unit type are the primary factor in pricing, with Cairo clearly controlling the size and subtracting from the average price. But it is difficult to understand: Where are the most expensive areas actually? What is the difference between the governorates? Which type of units is the most expensive?" data-ar="شرح تحليل السوق أن الموقع ونوع الوحدة هما العامل الرئيسي في التسعير، مع سيطرة واضحة للقاهرة على الحجم والطرح من السعر المتوسط. لكن من الصعب فهم: أين هي المناطق الأكثر تكلفة فعلياً؟ ما الفرق بين المحافظات؟ أي نوع من الوحدات هو الأكثر تكلفة؟">
+              Market analysis explained that location and unit type are the primary factor in pricing, with Cairo clearly controlling the size and subtracting from the average price. But it is difficult to understand: Where are the most expensive areas actually? What is the difference between the governorates? Which type of units is the most expensive?
+            </p>
+            <div class="project-footer">
+              <div class="project-links">
+                <a href="https://github.com/youssefabdelhamed70-rgb/Bayout-Prices" class="project-link" title="GitHub Repository">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <span class="project-status status-completed" data-en="Completed" data-ar="مكتمل">Completed</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section id="skills" class="main-content">
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-title" data-en="My Skills" data-ar="مهاراتي">My Skills</h1>
+        <p class="page-subtitle" data-en="A comprehensive overview of my technical skills, tool proficiency, and professional expertise in data analysis and business intelligence." data-ar="نظرة شاملة على مهاراتي التقنية وإتقان الأدوات والخبرة المهنية في تحليل البيانات وذكاء الأعمال.">
+          A comprehensive overview of my technical skills, tool proficiency, and professional expertise in data analysis and business intelligence.
+        </p>
+      </div>
+
+      <!-- Skills Overview -->
+      <div class="skills-overview">
+        <div class="overview-card">
+          <i class="fas fa-chart-bar overview-icon"></i>
+          <h3 class="overview-title" data-en="Data Analysis" data-ar="تحليل البيانات">Data Analysis</h3>
+          <p class="overview-description" data-en="Advanced expertise in statistical analysis, data visualization, and business intelligence with proven track record of delivering actionable insights." data-ar="خبرة متقدمة في التحليل الإحصائي وتصور البيانات وذكاء الأعمال مع سجل حافل في تقديم رؤى قابلة للتنفيذ.">
+            Advanced expertise in statistical analysis, data visualization, and business intelligence with proven track record of delivering actionable insights.
+          </p>
+        </div>
+        <div class="overview-card">
+          <i class="fas fa-code overview-icon"></i>
+          <h3 class="overview-title" data-en="Technical Skills" data-ar="المهارات التقنية">Technical Skills</h3>
+          <p class="overview-description" data-en="Proficient in industry-leading tools including Power BI, SQL, Python, and Excel with focus on automation and efficiency optimization." data-ar="متمكن من الأدوات الرائدة في الصناعة بما في ذلك Power BI وSQL وPython وExcel مع التركيز على الأتمتة وتحسين الكفاءة.">
+            Proficient in industry-leading tools including Power BI, SQL, Python, and Excel with focus on automation and efficiency optimization.
+          </p>
+        </div>
+      </div>
+
+<!-- Technical Skills -->
+<div class="skills-section">
+  <h2 class="section-title" data-en="Technical Skills" data-ar="المهارات التقنية">Technical Skills</h2>
+  <div class="skills-grid">
+
+    <!-- Programming & Python -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fab fa-python category-icon"></i>
+        <h3 class="category-title" data-en="Programming & Python" data-ar="البرمجة وPython">Programming & Python</h3>
+      </div>
+      <ul class="skill-list-clean">
+        <li class="skill-item-clean"><i class="fab fa-python"></i><span class="skill-name">Python</span></li>
+        <li class="skill-item-clean"><i class="fas fa-table"></i><span class="skill-name">Pandas</span></li>
+        <li class="skill-item-clean"><i class="fas fa-calculator"></i><span class="skill-name">NumPy</span></li>
+        <li class="skill-item-clean"><i class="fas fa-chart-area"></i><span class="skill-name">Matplotlib</span></li>
+        <li class="skill-item-clean"><i class="fas fa-plug"></i><span class="skill-name">Requests</span></li>
+        <li class="skill-item-clean"><i class="fas fa-code"></i><span class="skill-name">BeautifulSoup</span></li>
+        <li class="skill-item-clean"><i class="fas fa-cloud-download-alt"></i><span class="skill-name" data-en="API Data Extraction" data-ar="استخراج البيانات من API">API Data Extraction</span></li>
+      </ul>
+    </div>
+
+    <!-- Business Intelligence -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fas fa-chart-pie category-icon"></i>
+        <h3 class="category-title" data-en="Business Intelligence" data-ar="ذكاء الأعمال">Business Intelligence</h3>
+      </div>
+      <ul class="skill-list-clean">
+        <li class="skill-item-clean"><i class="fas fa-chart-bar"></i><span class="skill-name">Power BI</span></li>
+        <li class="skill-item-clean"><i class="fas fa-calculator"></i><span class="skill-name">DAX</span></li>
+        <li class="skill-item-clean"><i class="fas fa-chart-area"></i><span class="skill-name">Tableau</span></li>
+        <li class="skill-item-clean"><i class="fas fa-chart-line"></i><span class="skill-name">Looker Studio</span></li>
+        <li class="skill-item-clean"><i class="fas fa-file-excel"></i><span class="skill-name" data-en="Excel Advanced" data-ar="Excel المتقدم">Excel Advanced</span></li>
+      </ul>
+    </div>
+
+    <!-- Database & Data Engineering -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fas fa-database category-icon"></i>
+        <h3 class="category-title" data-en="Database & Data Engineering" data-ar="قواعد البيانات وهندسة البيانات">Database & Data Engineering</h3>
+      </div>
+      <ul class="skill-list-clean">
+        <li class="skill-item-clean"><i class="fas fa-database"></i><span class="skill-name">SQL (PostgreSQL, MySQL)</span></li>
+        <li class="skill-item-clean"><i class="fas fa-exchange-alt"></i><span class="skill-name">SSIS – ETL Packages</span></li>
+        <li class="skill-item-clean"><i class="fas fa-sitemap"></i><span class="skill-name" data-en="Database Design" data-ar="تصميم قواعد البيانات">Database Design</span></li>
+        <li class="skill-item-clean"><i class="fas fa-project-diagram"></i><span class="skill-name" data-en="Data Modeling" data-ar="نمذجة البيانات">Data Modeling</span></li>
+        <li class="skill-item-clean"><i class="fas fa-cogs"></i><span class="skill-name" data-en="ETL Processes" data-ar="عمليات ETL">ETL Processes</span></li>
+      </ul>
+    </div>
+
+    <!-- Analytics & Visualization -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fas fa-brain category-icon"></i>
+        <h3 class="category-title" data-en="Analytics & Visualization" data-ar="التحليلات والتصور البياني">Analytics & Visualization</h3>
+      </div>
+      <ul class="skill-list-clean">
+        <li class="skill-item-clean"><i class="fas fa-chart-bar"></i><span class="skill-name" data-en="Statistical Analysis" data-ar="التحليل الإحصائي">Statistical Analysis</span></li>
+        <li class="skill-item-clean"><i class="fas fa-tachometer-alt"></i><span class="skill-name" data-en="Dashboard Design" data-ar="تصميم لوحات المعلومات">Dashboard Design</span></li>
+        <li class="skill-item-clean"><i class="fas fa-broom"></i><span class="skill-name" data-en="Data Cleaning" data-ar="تنظيف البيانات">Data Cleaning</span></li>
+        <li class="skill-item-clean"><i class="fas fa-comments"></i><span class="skill-name" data-en="Data Storytelling" data-ar="سرد قصص البيانات">Data Storytelling</span></li>
+      </ul>
+    </div>
+
+    <!-- Automation & Workflow -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fas fa-robot category-icon"></i>
+        <h3 class="category-title" data-en="Automation & Workflow" data-ar="الأتمتة وسير العمل">Automation & Workflow</h3>
+      </div>
+      <ul class="skill-list-clean">
+        <li class="skill-item-clean"><i class="fas fa-project-diagram"></i><span class="skill-name">n8n</span></li>
+        <li class="skill-item-clean"><i class="fas fa-bolt"></i><span class="skill-name">Power Automate</span></li>
+        <li class="skill-item-clean"><i class="fas fa-sync-alt"></i><span class="skill-name" data-en="Automated Reporting" data-ar="التقارير الآلية">Automated Reporting</span></li>
+        <li class="skill-item-clean"><i class="fas fa-cogs"></i><span class="skill-name" data-en="ETL Automation" data-ar="أتمتة ETL">ETL Automation</span></li>
+      </ul>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skill-category">
+      <div class="category-header">
+        <i class="fas fa-users category-icon"></i>
+        <h3 class="category-title" data-en="Soft Skills" data-ar="المهارات الشخصية">Soft Skills</h3>
+      </div>
+      <ul class="skill-list-clean">
+        <li class="skill-item-clean"><i class="fas fa-lightbulb"></i><span class="skill-name" data-en="Analytical Thinking" data-ar="التفكير التحليلي">Analytical Thinking</span></li>
+        <li class="skill-item-clean"><i class="fas fa-search"></i><span class="skill-name" data-en="Attention to Detail" data-ar="الاهتمام بالتفاصيل">Attention to Detail</span></li>
+        <li class="skill-item-clean"><i class="fas fa-comments"></i><span class="skill-name" data-en="Communication" data-ar="التواصل">Communication</span></li>
+        <li class="skill-item-clean"><i class="fas fa-sync-alt"></i><span class="skill-name" data-en="Adaptability" data-ar="التكيّف">Adaptability</span></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+      <!-- Certifications -->
+      <div class="skills-section" id="all Certifications">
+        <h2 class="section-title" data-en="Certifications & Courses" data-ar="الشهادات والدورات">Certifications & Courses</h2>
+        <div class="certifications">
+          <div class="certification-card">
+            <img src="images/Think like a data analyst.jpg" width="250" alt="Machinfy Professional">
+            <h3 class="cert-title" data-en="Think like a data analyst" data-ar="التفكير مثل محلل البيانات">Think like a data analyst</h3>
+            <p class="cert-issuer">Data Skool</p>
+            <p class="cert-date">Jan 2026</p>
+          </div>
+          <div class="certification-card">
+            <img src="images/google analytics.jpeg" width="250" alt="Google Data Analytics">
+            <h3 class="cert-title" data-en="Google Data Analytics" data-ar="تحليل بيانات Google">Google Data Analytics</h3>
+            <p class="cert-issuer">Coursera</p>
+            <p class="cert-date">Sep 2025</p>
+          </div>
+          <div class="certification-card">
+            <img src="images/machinfy.webp" width="250" alt="Machinfy Professional">
+            <h3 class="cert-title" data-en="Machinfy Professional Data Analysis Course" data-ar="دورة Machinfy الاحترافية لتحليل البيانات">Machinfy Professional Data Analysis Course</h3>
+            <p class="cert-issuer">Machinfy</p>
+            <p class="cert-date">Oct 2024</p>
+          </div>
+          <div class="certification-card">
+            <img src="images/data base.webp" width="250" alt="Database Fundamentals">
+            <h3 class="cert-title" data-en="Database Fundamentals" data-ar="أساسيات قواعد البيانات">Database Fundamentals</h3>
+            <p class="cert-issuer">ITI Platform</p>
+            <p class="cert-date">Jul 2025</p>
+          </div>
+          <div class="certification-card">
+            <img src="images/career.webp" width="250" alt="Career Essentials">
+            <h3 class="cert-title" data-en="Career Essentials in Data Analysis" data-ar="أساسيات المهنة في تحليل البيانات">Career Essentials in Data Analysis</h3>
+            <p class="cert-issuer">Microsoft & LinkedIn</p>
+            <p class="cert-date">May 2024</p>
+          </div>
+          <div class="certification-card">
+            <img src="images/Power Pi.webp" width="250" alt="Power BI">
+            <h3 class="cert-title" data-en="Microsoft Power BI Data Analyst Associate (PL-300)" data-ar="محلل بيانات Microsoft Power BI (PL-300)">Microsoft Power BI Data Analyst Associate (PL-300)</h3>
+            <p class="cert-issuer">Microsoft</p>
+            <p class="cert-date">May 2025</p>
+          </div>
+          <div class="certification-card">
+            <img src="images/ce.webp" width="250" alt="LinkedIn Learning">
+            <h3 class="cert-title" data-en="Develop Your Data Analytics Skills" data-ar="طور مهارات تحليل البيانات الخاصة بك">Develop Your Data Analytics Skills</h3>
+            <p class="cert-issuer">LinkedIn</p>
+            <p class="cert-date">Aug 2025</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Internships -->
+<div class="skills-section">
+  <h2 class="section-title" data-en="Internships" data-ar="التدريب المهني">Internships</h2>
+  <div class="certifications">
+
+    <div class="certification-card">
+      <img src="images/Diollete.png" width="250" alt="Deloitte">
+      <h3 class="cert-title" data-en="Data Analysis & Forensic Technology" data-ar="تحليل البيانات والتقنية الجنائية">Data Analysis & Forensic Technology</h3>
+      <p class="cert-issuer">Deloitte</p>
+      <p class="cert-date">Dec 2025</p>
+    </div>
+
+    <div class="certification-card">
+      <img src="images/Quantim.png" width="250" alt="Quantium">
+      <h3 class="cert-title" data-en="Data Analytics & Commercial Insights" data-ar="تحليل البيانات والرؤى التجارية">Data Analytics & Commercial Insights</h3>
+      <p class="cert-issuer">Quantium</p>
+      <p class="cert-date">Jan 2026</p>
+    </div>
+
+    <div class="certification-card">
+      <img src="images/turvian.png" width="250" alt="Truvian">
+      <h3 class="cert-title" data-en="KPI Dashboards & Workflow Automation" data-ar="لوحات KPI وأتمتة سير العمل">KPI Dashboards & Workflow Automation</h3>
+      <p class="cert-issuer">Truvian Intelligence</p>
+      <p class="cert-date">Jul 2025</p>
+    </div>
+
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact" class="main-content">
+    <div class="container">
+      <!-- Page Header -->
+      <div class="page-header">
+        <h1 class="page-title" data-en="Get In Touch" data-ar="تواصل معي">Get In Touch</h1>
+        <p class="page-subtitle" data-en="Ready to transform your data into actionable insights? Let's discuss your project and explore how we can achieve your goals together." data-ar="هل أنت مستعد لتحويل بياناتك إلى رؤى قابلة للتنفيذ؟ دعنا نناقش مشروعك ونستكشف كيف يمكننا تحقيق أهدافك معاً.">
+          Ready to transform your data into actionable insights? Let's discuss your project and explore how we can achieve your goals together.
+        </p>
+      </div>
+
+      <!-- Contact Grid -->
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-envelope contact-icon"></i>
+            <div class="contact-details">
+              <h3 data-en="Email" data-ar="البريد الإلكتروني">Email</h3>
+              <a href="mailto:youssefabdelhamed70@gmail.com">youssef.abdelhamed70@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fab fa-whatsapp contact-icon"></i>
+            <div class="contact-details">
+              <h3 data-en="WhatsApp" data-ar="واتساب">WhatsApp</h3>
+              <a href="https://wa.me/201159680509" target="_blank">+20 115 968 0509</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt contact-icon"></i>
+            <div class="contact-details">
+              <h3 data-en="Location" data-ar="الموقع">Location</h3>
+              <p data-en="Giza, Egypt" data-ar="الجيزة، مصر">Giza, Egypt</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <i class="fab fa-linkedin contact-icon"></i>
+            <div class="contact-details">
+              <h3 data-en="LinkedIn" data-ar="لينكدإن">LinkedIn</h3>
+              <a href="https://linkedin.com/in/youssef-abdelhamed" target="_blank" rel="noopener">youssef-abdelhamed</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <form class="contact-form" action="https://formspree.io/f/xjkzylwz" method="POST">
+            <div class="form-group">
+              <label for="name" class="form-label" data-en="Your Name" data-ar="اسمك">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="Your name" data-en-placeholder="Your name" data-ar-placeholder="اسمك" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email" class="form-label" data-en="Your Email" data-ar="بريدك الإلكتروني">Your Email</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="Your E-mail" data-en-placeholder="Your E-mail" data-ar-placeholder="بريدك الإلكتروني" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject" class="form-label" data-en="Subject" data-ar="الموضوع">Subject</label>
+              <input type="text" id="subject" name="subject" class="form-input" placeholder="Project Inquiry" data-en-placeholder="Project Inquiry" data-ar-placeholder="استفسار عن مشروع" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="form-label" data-en="Your Message" data-ar="رسالتك">Your Message</label>
+              <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project..." data-en-placeholder="Tell me about your project..." data-ar-placeholder="أخبرني عن مشروعك..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary">
+              <i class="fas fa-paper-plane" aria-label="Send Message"></i>
+              <span data-en="Send Message" data-ar="إرسال الرسالة">Send Message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Floating -->
+  <footer class="footer-float">
+    <p data-en="© 2025 Youssef Abdelhamed" data-ar="© 2025 يوسف عبد الحميد">© 2025 Youssef Abdelhamed</p>
+    <div class="footer-icons">
+      <a href="https://www.linkedin.com/in/youssef-abdelhamed" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/youssefabdelhamed70-rgb" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://wa.me/201159680509" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:youssef.abdelhamed70@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top"><i class="fas fa-arrow-up" aria-label="back-to-top"></i></a>
+
+  <!-- Typing Animation -->
+  <script>
+    const sentences = [
+      { en: "Data Analyst & BI Developer", ar: "محلل بيانات ومطور BI" },
+      { en: "Turning Data into Decisions", ar: "تحويل البيانات إلى قرارات" },
+      { en: "Power BI | SQL | Python", ar: "Power BI | SQL | Python" },
+      { en: "Your Growth Partner", ar: "شريكك في النمو" }
+    ];
+    let index = 0;
+    let charIndex = 0;
+    let currentSentence = "";
+    let isDeleting = false;
+    const typingElement = document.getElementById("typingText");
+    const cursor = document.querySelector(".cursor");
+
+    function typeEffect() {
+      const currentLang = localStorage.getItem('lang') || 'en';
+      const fullSentence = sentences[index][currentLang];
+      if (isDeleting) {
+        currentSentence = fullSentence.substring(0, charIndex - 1);
+        charIndex--;
+      } else {
+        currentSentence = fullSentence.substring(0, charIndex + 1);
+        charIndex++;
+      }
+
+      typingElement.textContent = currentSentence;
+
+      let speed = isDeleting ? 50 : 100;
+
+      if (!isDeleting && currentSentence === fullSentence) {
+        speed = 1500;
+        isDeleting = true;
+      } else if (isDeleting && currentSentence === "") {
+        isDeleting = false;
+        index = (index + 1) % sentences.length;
+        charIndex = 0;
+        speed = 300;
+      }
+
+      setTimeout(() => typeEffect(), speed);
+    }
+
+    window.addEventListener("load", typeEffect);
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
